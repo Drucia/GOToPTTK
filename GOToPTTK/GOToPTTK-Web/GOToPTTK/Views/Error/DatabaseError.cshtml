@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/Prompt.cshtml";
+}
+
+@section header{
+<h1>Komunikat</h1>
+}
+@section message{
+    Błąd połączenia z bazą danych
+}
+@section button{
+    <a asp-controller="Home" asp-action="Index" class="btn btn-default button-blue">Powrót</a>
+}
+

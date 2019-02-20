@@ -1,0 +1,48 @@
+﻿@model GOToPTTK.Model.Entities.OdcinekPunktowany
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 class="text-center">Modyfikacja trasy punktowanej</h1>
+<hr />
+<div class="row">
+    @if (ViewBag.RouteExists != null && ViewBag.RouteExists)
+    {
+        <div class="alert alert-danger" role="alert">
+            Identyczna trasa istnieje już w wykazie
+        </div>
+    }
+    <div class="col-md-4">
+        <form asp-action="Modify">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <input type="hidden" asp-for="WykazTrasId" />
+            <div class="form-group">
+                <label asp-for="GrupaGorskaId" class="control-label">Grupa górska</label>
+                <select asp-for="GrupaGorskaId" class="form-control" asp-items="ViewBag.Groups"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="PoczatekId" class="control-label">Punkt początkowy</label>
+                <select asp-for="PoczatekId" class="form-control" asp-items="ViewBag.Places"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="KoniecId" class="control-label">Punkt końcowy</label>
+                <select asp-for="KoniecId" class="form-control" asp-items="ViewBag.Places"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Punkty" class="control-label">Punktacja</label>
+                <input asp-for="Punkty" class="form-control" />
+                <span asp-validation-for="Punkty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Edytuj" class="btn btn-default button-blue" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index"  asp-route-routeListId="@Model.WykazTrasId" class="btn btn-default ">Powrót</a>
+</div>
+

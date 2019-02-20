@@ -1,0 +1,652 @@
+{
+  "id": "6abe2c11-83e8-4ef7-87d0-bcee3aac64be",
+  "version": "2.0",
+  "name": "GOToPTTK",
+  "url": "http://localhost:58080",
+  "tests": [{
+    "id": "53a9618f-ed1b-4288-852f-8fd92a0719cb",
+    "name": "ManagePlaceListTest",
+    "commands": [{
+      "id": "6b627353-6944-43be-901d-af7504bbfc14",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f914c4c-274e-48f1-84ec-ab0fcf4af1ee",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29bb001f-d919-412c-84f0-0d03381d84d0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Spis punktów",
+      "targets": [
+        ["linkText=Spis punktów", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Spis punktów')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/ManagePlaceList')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bfba600-a29f-4c8d-a9ae-33255f4a55e7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Dodaj nowy punkt turystyczny",
+      "targets": [
+        ["linkText=Dodaj nowy punkt turystyczny", "linkText"],
+        ["css=.row:nth-child(3) .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Dodaj nowy punkt turystyczny')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Places/Create')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "267b7b1a-1af7-4ed5-b1d4-89f317dc62ac",
+      "comment": "",
+      "command": "click",
+      "target": "id=Nazwa",
+      "targets": [
+        ["id=Nazwa", "id"],
+        ["name=Nazwa", "name"],
+        ["css=#Nazwa", "css:finder"],
+        ["css=#Nazwa", "css"],
+        ["xpath=//input[@id='Nazwa']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1228ae05-191c-4286-a1e3-845c140596df",
+      "comment": "",
+      "command": "type",
+      "target": "id=Nazwa",
+      "targets": [
+        ["id=Nazwa", "id"],
+        ["name=Nazwa", "name"],
+        ["css=#Nazwa", "css:finder"],
+        ["css=#Nazwa", "css"],
+        ["xpath=//input[@id='Nazwa']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Śnieżka"
+    }, {
+      "id": "4580a7f6-62cc-488f-a433-97fad6d798c8",
+      "comment": "",
+      "command": "type",
+      "target": "id=WysokoscNpm",
+      "targets": [
+        ["id=WysokoscNpm", "id"],
+        ["name=WysokoscNpm", "name"],
+        ["css=#WysokoscNpm", "css:finder"],
+        ["css=#WysokoscNpm", "css"],
+        ["xpath=//input[@id='WysokoscNpm']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "1602"
+    }, {
+      "id": "8e37a8d5-b2d6-454d-85fc-08945ba0ce0e",
+      "comment": "",
+      "command": "type",
+      "target": "id=DlugoscGeograficzna",
+      "targets": [
+        ["id=DlugoscGeograficzna", "id"],
+        ["name=DlugoscGeograficzna", "name"],
+        ["css=#DlugoscGeograficzna", "css:finder"],
+        ["css=#DlugoscGeograficzna", "css"],
+        ["xpath=//input[@id='DlugoscGeograficzna']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "15.7397417"
+    }, {
+      "id": "f65b5301-3ff9-42f4-bfd8-d1b39c7be331",
+      "comment": "",
+      "command": "click",
+      "target": "id=SzerokoscGeograficzna",
+      "targets": [
+        ["id=SzerokoscGeograficzna", "id"],
+        ["name=SzerokoscGeograficzna", "name"],
+        ["css=#SzerokoscGeograficzna", "css:finder"],
+        ["css=#SzerokoscGeograficzna", "css"],
+        ["xpath=//input[@id='SzerokoscGeograficzna']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "884e593c-4eef-41bb-9ede-73e05d62cfe9",
+      "comment": "",
+      "command": "type",
+      "target": "id=SzerokoscGeograficzna",
+      "targets": [
+        ["id=SzerokoscGeograficzna", "id"],
+        ["name=SzerokoscGeograficzna", "name"],
+        ["css=#SzerokoscGeograficzna", "css:finder"],
+        ["css=#SzerokoscGeograficzna", "css"],
+        ["xpath=//input[@id='SzerokoscGeograficzna']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "50.7361031"
+    }, {
+      "id": "e04b3257-7250-46a8-902a-d9930435c1fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row",
+      "targets": [
+        ["css=.row", "css:finder"],
+        ["css=div.row", "css"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87ecb633-9e86-47b1-8dd3-1eb191fde5d9",
+      "comment": "",
+      "command": "click",
+      "target": "id=Opis",
+      "targets": [
+        ["id=Opis", "id"],
+        ["name=Opis", "name"],
+        ["css=#Opis", "css:finder"],
+        ["css=#Opis", "css"],
+        ["xpath=//input[@id='Opis']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cf51427-f5a4-466e-86d1-fa8b0d8bfe74",
+      "comment": "",
+      "command": "type",
+      "target": "id=Opis",
+      "targets": [
+        ["id=Opis", "id"],
+        ["name=Opis", "name"],
+        ["css=#Opis", "css:finder"],
+        ["css=#Opis", "css"],
+        ["xpath=//input[@id='Opis']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": "Najwyższy szczyt Karkonoszy oraz Sudetów."
+    }, {
+      "id": "87bec27a-5458-4517-aacf-ba27547b6115",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["css=button.btn.btn-default", "css"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16515164-169a-4419-a562-8ea714294988",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=OK",
+      "targets": [
+        ["linkText=OK", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'OK')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Places')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd79eea6-48ba-4aee-b3f3-44899f37ef20",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Back",
+      "targets": [
+        ["linkText=Back", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["css=div > a", "css"],
+        ["xpath=//a[contains(text(),'Back')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/ManagePlaceList')])[2]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa2d89f4-6fa9-433d-9667-d6cd065e2697",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Usuń/Modyfikuj punkt turystyczny",
+      "targets": [
+        ["linkText=Usuń/Modyfikuj punkt turystyczny", "linkText"],
+        ["css=.row:nth-child(5) .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Usuń/Modyfikuj punkt turystyczny')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Places/Delete_Edit')]", "xpath:href"],
+        ["xpath=//div[4]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29add70f-0390-465b-b7ba-26f9164eb6f4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Back",
+      "targets": [
+        ["linkText=Back", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["css=div > a", "css"],
+        ["xpath=//a[contains(text(),'Back')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/ManagePlaceList')])[2]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca04b857-acfb-4c2d-a3ba-233c2075e3b2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Dodaj nowy punkt turystyczny",
+      "targets": [
+        ["linkText=Dodaj nowy punkt turystyczny", "linkText"],
+        ["css=.row:nth-child(3) .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Dodaj nowy punkt turystyczny')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Places/Create')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a806e9f9-7de3-40b0-b7f5-59c84372dd38",
+      "comment": "",
+      "command": "click",
+      "target": "id=Nazwa",
+      "targets": [
+        ["id=Nazwa", "id"],
+        ["name=Nazwa", "name"],
+        ["css=#Nazwa", "css:finder"],
+        ["css=#Nazwa", "css"],
+        ["xpath=//input[@id='Nazwa']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcfce754-4cfd-46ea-b959-63af253ffe6f",
+      "comment": "",
+      "command": "type",
+      "target": "id=Nazwa",
+      "targets": [
+        ["id=Nazwa", "id"],
+        ["name=Nazwa", "name"],
+        ["css=#Nazwa", "css:finder"],
+        ["css=#Nazwa", "css"],
+        ["xpath=//input[@id='Nazwa']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Śnieżka"
+    }, {
+      "id": "93851c9e-ebbd-4725-8266-8c6634543460",
+      "comment": "",
+      "command": "click",
+      "target": "css=.body-content",
+      "targets": [
+        ["css=.body-content", "css:finder"],
+        ["css=div.container.body-content", "css"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb012df5-cad9-46d4-9a17-f22f673f437e",
+      "comment": "",
+      "command": "click",
+      "target": "id=WysokoscNpm",
+      "targets": [
+        ["id=WysokoscNpm", "id"],
+        ["name=WysokoscNpm", "name"],
+        ["css=#WysokoscNpm", "css:finder"],
+        ["css=#WysokoscNpm", "css"],
+        ["xpath=//input[@id='WysokoscNpm']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b4f5d5d-94b6-4e1e-b919-b0a8674f46af",
+      "comment": "",
+      "command": "type",
+      "target": "id=WysokoscNpm",
+      "targets": [
+        ["id=WysokoscNpm", "id"],
+        ["name=WysokoscNpm", "name"],
+        ["css=#WysokoscNpm", "css:finder"],
+        ["css=#WysokoscNpm", "css"],
+        ["xpath=//input[@id='WysokoscNpm']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "1602"
+    }, {
+      "id": "fb7daebd-a7c9-4dc7-8d92-fe5267314ec6",
+      "comment": "",
+      "command": "click",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["css=form", "css"],
+        ["xpath=//form[@action='/Places/Create']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff584f87-dbd9-4ae8-bfc4-f5a4d473d236",
+      "comment": "",
+      "command": "click",
+      "target": "id=DlugoscGeograficzna",
+      "targets": [
+        ["id=DlugoscGeograficzna", "id"],
+        ["name=DlugoscGeograficzna", "name"],
+        ["css=#DlugoscGeograficzna", "css:finder"],
+        ["css=#DlugoscGeograficzna", "css"],
+        ["xpath=//input[@id='DlugoscGeograficzna']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "952a265b-7a40-41a4-95d2-6080d6b1b5b8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row",
+      "targets": [
+        ["css=.row", "css:finder"],
+        ["css=div.row", "css"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4fbf733-cfdc-430a-afc8-4b9776180f6a",
+      "comment": "",
+      "command": "click",
+      "target": "id=SzerokoscGeograficzna",
+      "targets": [
+        ["id=SzerokoscGeograficzna", "id"],
+        ["name=SzerokoscGeograficzna", "name"],
+        ["css=#SzerokoscGeograficzna", "css:finder"],
+        ["css=#SzerokoscGeograficzna", "css"],
+        ["xpath=//input[@id='SzerokoscGeograficzna']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "516e8e9d-3db6-472e-9273-eeeb7d1428da",
+      "comment": "",
+      "command": "type",
+      "target": "id=SzerokoscGeograficzna",
+      "targets": [
+        ["id=SzerokoscGeograficzna", "id"],
+        ["name=SzerokoscGeograficzna", "name"],
+        ["css=#SzerokoscGeograficzna", "css:finder"],
+        ["css=#SzerokoscGeograficzna", "css"],
+        ["xpath=//input[@id='SzerokoscGeograficzna']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "50.7361031"
+    }, {
+      "id": "408a4707-8ff8-4ef9-80d6-f5b06445c2f8",
+      "comment": "",
+      "command": "click",
+      "target": "id=DlugoscGeograficzna",
+      "targets": [
+        ["id=DlugoscGeograficzna", "id"],
+        ["name=DlugoscGeograficzna", "name"],
+        ["css=#DlugoscGeograficzna", "css:finder"],
+        ["css=#DlugoscGeograficzna", "css"],
+        ["xpath=//input[@id='DlugoscGeograficzna']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ffe9a4f-a2f5-427c-84d7-fab5b539201f",
+      "comment": "",
+      "command": "type",
+      "target": "id=DlugoscGeograficzna",
+      "targets": [
+        ["id=DlugoscGeograficzna", "id"],
+        ["name=DlugoscGeograficzna", "name"],
+        ["css=#DlugoscGeograficzna", "css:finder"],
+        ["css=#DlugoscGeograficzna", "css"],
+        ["xpath=//input[@id='DlugoscGeograficzna']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "15.7397417"
+    }, {
+      "id": "68f11d72-45a6-4caa-b157-3ab971b2b42d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row",
+      "targets": [
+        ["css=.row", "css:finder"],
+        ["css=div.row", "css"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1b285ff-ff73-44aa-9078-92abac8baa0a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["css=button.btn.btn-default", "css"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4b4aa6a-8cb4-4414-9ead-a9e1d70cf96f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Powrót",
+      "targets": [
+        ["linkText=Powrót", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Powrót')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/ManagePlaceList')])[2]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ec344b4-c808-4f83-9db6-c6f07329275c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Usuń/Modyfikuj punkt turystyczny",
+      "targets": [
+        ["linkText=Usuń/Modyfikuj punkt turystyczny", "linkText"],
+        ["css=.row:nth-child(5) .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Usuń/Modyfikuj punkt turystyczny')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Places/Delete_Edit')]", "xpath:href"],
+        ["xpath=//div[4]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "759fe924-0dab-41aa-b0f4-df14280aa5fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(20) a",
+      "targets": [
+        ["css=tr:nth-child(20) a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Details')])[20]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Places/Details/4027')]", "xpath:href"],
+        ["xpath=//tr[20]/td[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e0b5745-04cb-4e59-a9a5-3a5c2907b738",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Modyfikuj",
+      "targets": [
+        ["linkText=Modyfikuj", "linkText"],
+        ["css=.btn:nth-child(1) > a", "css:finder"],
+        ["css=button.btn.btn-default > a", "css"],
+        ["xpath=//a[contains(text(),'Modyfikuj')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Places/Edit/4027')]", "xpath:href"],
+        ["xpath=//button/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45a5deb2-95dc-4dc8-9b21-ffde921c2719",
+      "comment": "",
+      "command": "click",
+      "target": "id=Opis",
+      "targets": [
+        ["id=Opis", "id"],
+        ["name=Opis", "name"],
+        ["css=#Opis", "css:finder"],
+        ["css=#Opis", "css"],
+        ["xpath=//input[@id='Opis']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b07019c-686e-4409-a3bf-29070ef5b197",
+      "comment": "",
+      "command": "type",
+      "target": "id=Opis",
+      "targets": [
+        ["id=Opis", "id"],
+        ["name=Opis", "name"],
+        ["css=#Opis", "css:finder"],
+        ["css=#Opis", "css"],
+        ["xpath=//input[@id='Opis']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": "Najwyższy szczyt Karkonoszy oraz Sudetów. W schronisku można zjeść coś dobrego oraz napić się gorących napoi."
+    }, {
+      "id": "1847aeb0-350a-427f-a86d-3ee7c5746b30",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["css=button.btn.btn-default", "css"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e619b38f-37a7-42a2-940b-4b33dac07e01",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=OK",
+      "targets": [
+        ["linkText=OK", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'OK')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Places/Delete_Edit')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b114f77-b17b-4675-bca2-95267ea5ce72",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(20) a",
+      "targets": [
+        ["css=tr:nth-child(20) a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Details')])[20]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Places/Details/4027')]", "xpath:href"],
+        ["xpath=//tr[20]/td[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "17d414d4-3c1e-4201-b28d-5e8630b7de63",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Usuń",
+      "targets": [
+        ["linkText=Usuń", "linkText"],
+        ["css=.btn:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Usuń')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Places/Delete/4027')]", "xpath:href"],
+        ["xpath=//button[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7aa18fcb-0ca2-4695-986d-7df12c5acb5b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3)",
+      "targets": [
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddf25ef0-3f2b-4575-97f6-ad3c8f9eee31",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=OK",
+      "targets": [
+        ["linkText=OK", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'OK')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Places/Delete_Edit')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29860073-3a7d-4789-8cb6-3ee63314ca43",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(9) a",
+      "targets": [
+        ["css=tr:nth-child(9) a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Details')])[9]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Places/Details/13')]", "xpath:href"],
+        ["xpath=//tr[9]/td[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69deb650-3a69-43c9-a6ea-539e0e4b3788",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Usuń",
+      "targets": [
+        ["linkText=Usuń", "linkText"],
+        ["css=.btn:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Usuń')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Places/Delete/13')]", "xpath:href"],
+        ["xpath=//button[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4b49794-6a49-485a-971d-44d897bd6d48",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=OK",
+      "targets": [
+        ["linkText=OK", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'OK')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Places/Delete_Edit')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79c157aa-f43e-46a6-8965-15fe6796b199",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Back",
+      "targets": [
+        ["linkText=Back", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["css=div > a", "css"],
+        ["xpath=//a[contains(text(),'Back')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/ManagePlaceList')])[2]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "90e6ff29-05e6-4891-8bee-8038a04e2a7b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:58080/"],
+  "plugins": []
+}

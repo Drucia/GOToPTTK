@@ -1,0 +1,24 @@
+﻿@model GOToPTTK.Model.Entities.Miejsce
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/Prompt.cshtml";
+}
+
+@section header{
+    <h1>Usuwanie trasy punktowanej</h1>
+}
+@section message{
+    Czy na pewno chcesz usunąć wybrany punkt turystyczny?
+}
+@section button{
+    <form asp-action="Delete">
+        <button type="button" class="btn btn-default" style="margin-right:10%;">
+            <a asp-action="Delete_Edit" style="text-decoration: none;">Anuluj</a>
+        </button>
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-default" style="color: #0064b9; margin-left: 10%;">
+            Potwierdź
+        </button>
+    </form>
+}

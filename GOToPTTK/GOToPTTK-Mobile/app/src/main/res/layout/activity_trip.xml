@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pl.edu.pwr.gotopttk.View.Views.CreateTripActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="32dp">
+
+        <DatePicker
+            android:id="@+id/tripDate"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:ems="10"
+            android:inputType="date"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tripDateLabel"
+            app:layout_constraintVertical_weight="3" />
+
+        <TextView
+            android:id="@+id/tripDateLabel"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="bottom"
+            android:labelFor="@id/tripDate"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:text="@string/tripDateLabelValue"
+            app:layout_constraintBottom_toTopOf="@+id/tripDate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tripRoutesRecyclerView"
+            app:layout_constraintVertical_weight="1" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/tripRoutesRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/tripDateLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_weight="8" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.83" />
+    </android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/endButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="@string/tripEndButtonValue"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="427dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingAddButton"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:scaleType="center"
+        android:src="@drawable/ic_add_black_24dp"
+        android:tint="@android:color/white"
+        android:visibility="visible"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:fabSize="normal" />
+
+</FrameLayout>

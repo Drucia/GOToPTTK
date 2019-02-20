@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "CreateSuccessful";
+    Layout = "~/Views/Shared/Prompt.cshtml";
+}
+
+@section header{
+    <h1>Dodawanie punktu turystycznego</h1>
+}
+@section message{
+    Poprawnie dodano punkt turystyczny do bazy danych.
+}
+@section button{
+    <a asp-controller="Places" asp-action="Index" class="btn btn-default button-blue">OK</a>
+}

@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "NoPlaces";
+    Layout = "~/Views/Shared/Prompt.cshtml";
+}
+
+@section header{
+    <h1>Usunięcie/Modyfikacja punktu turystycznego</h1>
+}
+@section message{
+    Spis jest pusty.
+}
+@section button{
+    <a asp-controller="ManagePlaceList" asp-action="Index" class="btn btn-default button-blue">OK</a>
+}

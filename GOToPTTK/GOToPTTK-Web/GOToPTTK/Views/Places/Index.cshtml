@@ -1,0 +1,57 @@
+﻿@model IEnumerable<GOToPTTK.Model.Entities.Miejsce>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Spis punktów turystycznych</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Lp.
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nazwa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SzerokoscGeograficzna)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DlugoscGeograficzna)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WysokoscNpm)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @{int i = 1;}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td><span>@i</span>.</td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nazwa)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SzerokoscGeograficzna)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DlugoscGeograficzna)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WysokoscNpm)
+                </td>
+            </tr>
+            i++;
+        }
+    </tbody>
+</table>
+
+<div>
+    </br>
+    <a asp-controller="ManagePlaceList" asp-action="Index">Back</a>
+</div>

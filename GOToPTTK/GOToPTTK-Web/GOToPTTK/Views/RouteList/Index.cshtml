@@ -1,0 +1,44 @@
+﻿@model IEnumerable<GOToPTTK.Model.Entities.WykazTras>
+
+@{
+    ViewData["Title"] = "Wykazy tras punktowanych";
+    
+}
+
+<h2>Wykazy tras punktowanych</h2>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            Data obowiązywania
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Zatwierdzony)
+        </th>
+        <th>
+            Obowiązuje
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <div class="margin-beetween-buttons"></div>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataObowiazywania)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Zatwierdzony)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Obowiazuje)
+            </td>
+            <td>
+                @Html.RouteLink("Zarządzaj wykazem tras", "Routes", new { routeListId = item.Id}, new { action = "Index"})
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Delete_Error";
+    Layout = "~/Views/Shared/Prompt.cshtml";
+}
+
+@section header{
+    <h1>Usuwanie punktu turystycznego</h1>
+}
+@section message{
+   Nie można usunąć punktu turystyczego. Punkt jest w użyciu.
+}
+@section button{
+    <a asp-action="Delete_Edit" class="btn btn-default button-blue">OK</a>
+}

@@ -1,0 +1,27 @@
+﻿@model GOToPTTK.Model.Entities.OdcinekPunktowany
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/Prompt.cshtml";
+}
+
+@section header{
+    <h1>Usunięcie trasy punktowanej</h1>
+}
+@section message{
+    Czy na pewno chcesz usunąć trasę?
+}
+@section button{
+    <div class="margin-beetween-buttons"></div>
+    <div class="col-lg-3 col-lg-offset-3">
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="Id" />
+            <input type="submit" value="Tak" class="btn btn-block button-blue" />
+        </form>
+    </div>
+    <div class="col-lg-3">
+        <a asp-route="Routes" class="btn btn-block button-blue">Nie</a>
+    </div>
+
+}
+

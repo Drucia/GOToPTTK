@@ -1,0 +1,103 @@
+﻿@model GOToPTTK.Model.Entities.Miejsce
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="text-center">Usunięcie/Modyfikacja punktu turystycznego</h2>
+
+<div class="text-center" style="width: auto;">
+    <div class="margin-under-header"></div>
+    <div class="prompt">
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-3">
+                <div class="prompt-header text-center">Informacje o punkcie turystycznym</div>
+            </div>
+        </div>
+        <div class="row" style="width: auto;">
+            <div class="col-lg-6 col-lg-offset-3">
+                <div class="prompt-content" style="width: auto; font-size: 14px;">
+                    <div class="row">
+                        <div>
+                            <hr />
+                            <dl class="dl-horizontal" style="text-align: left;">
+                                <dt>
+                                    @Html.DisplayNameFor(model => model.Nazwa)
+                                </dt>
+                                <dd>
+                                    @Html.DisplayFor(model => model.Nazwa)
+                                </dd>
+                                <dt>
+                                    @Html.DisplayNameFor(model => model.WysokoscNpm)
+                                </dt>
+                                <dd>
+                                    @Html.DisplayFor(model => model.WysokoscNpm)
+                                </dd>
+                                <dt style="width: auto;">
+                                    @Html.DisplayNameFor(model => model.SzerokoscGeograficzna)
+                                </dt>
+                                <dd>
+                                    @Html.DisplayFor(model => model.SzerokoscGeograficzna)
+                                </dd>
+                                <dt>
+                                    @Html.DisplayNameFor(model => model.DlugoscGeograficzna)
+                                </dt>
+                                <dd>
+                                    @Html.DisplayFor(model => model.DlugoscGeograficzna)
+                                </dd>
+                                <dt>
+                                    @Html.DisplayNameFor(model => model.GodzinaOtwarcia)
+                                </dt>
+                                <dd>
+                                    @Html.DisplayFor(model => model.GodzinaOtwarcia)
+                                </dd>
+                                <dt>
+                                    @Html.DisplayNameFor(model => model.GodzinaZamkniecia)
+                                </dt>
+                                <dd>
+                                    @Html.DisplayFor(model => model.GodzinaZamkniecia)
+                                </dd>
+                                <dt>
+                                    @Html.DisplayNameFor(model => model.Opis)
+                                </dt>
+                                <dd>
+                                    @Html.DisplayFor(model => model.Opis)
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="margin-beetween-buttons"></div>
+                    <div class="row">
+                        <button type="button" class="btn btn-default" style="margin-right: 10%;">
+                            <a asp-action="Edit" asp-route-id="@Model.Id">Modyfikuj</a>
+                            <span class="glyphicon glyphicon-pencil"></span>
+                        </button>
+                        <button type="button" class="btn btn-default" style="margin-left: 10%;">
+                            <a asp-action="Delete" asp-route-id="@Model.Id">Usuń</a>
+                            <span class="glyphicon glyphicon-trash"></span>
+                        </button>
+                        <style>
+                            a {
+                                color: #0064b9;
+                            }
+
+                                a:hover {
+                                    text-decoration: none;
+                                }
+                        </style>
+                    </div>
+                    <div style="font-size: 13px; text-align:end;">
+                        </br>
+                        <a asp-action="Delete_Edit">Powrót do listy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

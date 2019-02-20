@@ -1,0 +1,88 @@
+﻿@model IEnumerable<GOToPTTK.Model.Entities.OdcinekPunktowany>
+
+@{
+    ViewData["Title"] = "Routes";
+}
+<table class="table table-striped">
+    <thead class="bg-blue">
+        <tr>
+            <th>
+                #
+            </th>
+            <th>
+                Punkt początkowy
+            </th>
+            <th>
+                Punkt końcowy
+            </th>
+            <th>
+                Punktacja
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @{int i = (ViewBag.PageId - 1) * ViewBag.PageSize + 1 ;}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@i</td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Poczatek.Nazwa)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Koniec.Nazwa)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Punkty)
+                </td>
+                <td>
+                    <a asp-route="ModifyRoute" asp-route-routeListId="@item.WykazTrasId" asp-route-routeId="@item.Id"><img class="small-image" src="~/images/modify.png" alt="Modyfikacja" /></a> 
+                    <a asp-route="DeleteRoute" asp-route-routeListId="@item.WykazTrasId" asp-route-routeId="@item.Id"><img class="small-image" src="~/images/delete.png" alt="Usuń" /></a>
+                </td>
+            </tr>
+            i++;
+        }
+    </tbody>
+
+</table>
+<nav aria-label="Nawigacja">
+    <div class="text-center">
+        <ul class="pagination">
+            @if (ViewBag.PageId == 1)
+            {
+                <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">Poprzednia</span></a></li>
+            }
+            else
+            {
+                int previous = ViewBag.PageId - 1;
+                <li><a asp-route-page="@previous" asp-route-pageSize="@ViewBag.PageSize" aria-label="Previous"><span aria-hidden="true">Poprzednia</span></a></li>
+            }
+
+            @for (int p = 1; p <= ViewBag.PageCount; p++)
+            {
+                if (p == ViewBag.PageId)
+                {
+                    <li class="active"><a asp-route-page="@p" asp-route-pageSize="@ViewBag.PageSize">@p</a></li>
+                }
+                else
+                {
+                    <li><a asp-route-page="@p" asp-route-pageSize="@ViewBag.PageSize">@p</a></li>
+                }
+            }
+
+            @if (ViewBag.PageId == ViewBag.PageCount)
+            {
+                <li class="disabled"><a href="#" aria-label="Next"><span aria-hidden="true">Następna</span></a></li>
+            }
+            else
+            {
+                int next = ViewBag.PageId + 1;
+                <li><a asp-route-page="@next" asp-route-pageSize="@ViewBag.PageSize" aria-label="Next"><span aria-hidden="true">Następna</span></a></li>
+            }
+        </ul>
+    </div>
+</nav>
+<div>
+    <a asp-action="Index" class="btn btn-default ">Powrót</a>
+</div>

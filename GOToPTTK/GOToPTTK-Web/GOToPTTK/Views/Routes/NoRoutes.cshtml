@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewData["Title"] = "NoRoutes";
+    Layout = "~/Views/Shared/Prompt.cshtml";
+}
+
+@section header{
+<table class="table table-striped">
+    <thead class="bg-blue">
+        <tr>
+            <th>
+                #
+            </th>
+            <th>
+                Punkt początkowy
+            </th>
+            <th>
+                Punkt końcowy
+            </th>
+            <th>
+                Punktacja
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+</table>
+}
+@section message{
+    Wykaz wycieczek jest pusty
+}
+@section button{
+    <a asp-controller="Home" asp-action="Index" class="btn btn-default button-blue">Powrót</a>
+}
+

@@ -1,0 +1,66 @@
+﻿@model GOToPTTK.Model.Entities.Miejsce
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Dodanie punktu turystycznego</h2>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Nazwa" class="control-label"></label>
+                <input asp-for="Nazwa" class="form-control" />
+                <span asp-validation-for="Nazwa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WysokoscNpm" class="control-label"></label>
+                <input asp-for="WysokoscNpm" class="form-control" />
+                <span asp-validation-for="WysokoscNpm" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SzerokoscGeograficzna" class="control-label"></label>
+                <input asp-for="SzerokoscGeograficzna" class="form-control" />
+                <span asp-validation-for="SzerokoscGeograficzna" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DlugoscGeograficzna" class="control-label"></label>
+                <input asp-for="DlugoscGeograficzna" class="form-control" />
+                <span asp-validation-for="DlugoscGeograficzna" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GodzinaOtwarcia" class="control-label"></label>
+                <input type="time" asp-for="GodzinaOtwarcia" />
+                <span asp-validation-for="GodzinaOtwarcia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GodzinaZamkniecia" class="control-label"></label>
+                <input asp-for="GodzinaZamkniecia" type="time" />
+                <span asp-validation-for="GodzinaZamkniecia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Opis" class="control-label"></label>
+                <input asp-for="Opis" class="form-control" />
+                <span asp-validation-for="Opis" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-default" style="color: #0064b9; margin-left: 80%;">
+                Dodaj <span class="glyphicon glyphicon-plus-sign" style="color: black;"></span>
+            </button>
+        </form>
+        <style>
+            label {
+                color: #0064b9;
+                text-decoration: underline;
+            }
+        </style>
+    </div>
+</div>
+
+<div>
+    </br>
+    <a asp-controller="ManagePlaceList" asp-action="Index">Powrót</a>
+</div>
+

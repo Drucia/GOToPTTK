@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "Prompt";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="text-center">
+    @RenderSection("header")
+    <div class="margin-under-header"></div>
+    <div class="prompt">
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-3">
+                <div class="prompt-header text-center">Komunikat</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-3">
+                <div class="prompt-content">
+                    <div class="row">@RenderSection("message")</div>
+                    <div class="margin-beetween-buttons"></div>
+                    <div class="row">@RenderSection("button")</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@RenderBody()
+

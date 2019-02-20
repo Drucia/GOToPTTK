@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">GOToPTTK</string>
+    <string name="trip_act_name">Wycieczki do weryfikacji</string>
+
+    <string name="bottom_map">Mapa</string>
+    <string name="bottom_list">Wykaz</string>
+    <string name="button_verify">Weryfikacja</string>
+    <string name="plan_title">Planowanie wycieczki</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="route_start_label">Początek</string>
+    <string name="route_end_label">Koniec</string>
+    <string name="routePointsLabel">GOT</string>
+    <string name="addRouteDescription">Add route to the trip</string>
+
+    <string name="dialog_verify_with">Weryfikacja z udziałem</string>
+    <string name="dialog_verify_without">Weryfikacja bez udziału</string>
+
+    <string name="state_label">Status: </string>
+    <string name="start_date_label">Data rozpoczęcia: </string>
+    <string name="end_date_label">Data zakończenia: </string>
+    <string name="guide_label">Przodownik: </string>
+    <string name="tourist_label">Turysta: </string>
+    <string name="points_label">Liczba pkt.: </string>
+    <string name="routes_label">Przebieg trasy: </string>
+
+    <string name="pointsFormat">%1$d GOT</string>
+    <string name="date_format">%1$02d.%2$02d.%3$d</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="content_back">Powrót</string>
+    <string name="content_start">start</string>
+    <string name="content_end">end</string>
+    <string name="tripDateLabelValue">Data rozpoczęcia wycieczki</string>
+    <string name="tripEndButtonValue">Zakończ</string>
+    <string name="lengthFormat">%1$d km</string>
+    <string name="startEndLabelValue">Początek - Koniec</string>
+
+    <string name="search_hint">Szukaj punktu</string>
+
+
+    <string name="EXTRA_PLANNED_TRIP">EXTRA_PLANNED_TRIP</string>
+    <string name="trip_points_label">Suma punktów GOT</string>
+    <string name="button_verify_without">Weryfikacja bez udziału</string>
+    <string name="button_verify_with">Weryfikacja z udziałem</string>
+    <string name="button_accept">Zatwierdź</string>
+    <string name="button_discard">Odrzuć</string>
+    <string name="DIALOG_UNABLE_TO_CREATE_ROUTE">Nie można utworzyć trasy</string>
+    <string name="DIALOG_DISMISS">Powrót</string>
+    <string name="DIALOG_DEFAULT_MESSAGE">Wystąpił błąd</string>
+    <string name="DIALOG_DEFAULT_TITLE">Komunikat</string>
+    <string name="DIALOG_DEFAULT_BUTTON_TEXT">OK</string>
+    <string name="DIALOG_CONNECTION_ERROR_MESSAGE">Błąd połączenia z bazą danych</string>
+    <string name="DIALOG_ERROR_TAG">DIALOG_ERROR_TAG</string>
+    <string name="marker_popup_start">Ustaw jako początek trasy</string>
+    <string name="marker_popup_end">Ustaw jako koniec trasy</string>
+</resources>
